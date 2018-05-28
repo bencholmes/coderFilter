@@ -1,4 +1,5 @@
-![Big Logo](./img/logo.png)
+<img src="./img/logo.png" width="256">
+
 # coderFilter
 A MATLAB Coder compatible filter function, capable of 2nd order high, low, and bandpass filters and their combinations.
 
