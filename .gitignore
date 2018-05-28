@@ -9,6 +9,7 @@
 
 # Coder projects
 *.prj
+mex/
 
 # Packaged app and toolbox files 
 *.mlappinstall 
