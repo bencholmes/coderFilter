@@ -54,12 +54,12 @@ end
 
 %% Run model
 Ns = size(u,2);
-x  = zeros(size(A,1),Ns+1);
+x  = zeros(size(A,1),1);
 y  = zeros(size(D,1),Ns);
 
 for nn=1:Ns
-    x(:,nn+1) = A*x(:,nn) + B*u(:,nn);
-    y(:,nn) = C*x(:,nn) + D*u(:,nn);
+    y(:,nn) = C*x + D*u(:,nn);
+    x = A*x + B*u(:,nn);
 end
 
 end
