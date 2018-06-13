@@ -20,7 +20,11 @@ x = [1 zeros(1,Ns-1)];
 %% Cascade filters
 
 % Composite band-pass filter
+profile on
 yDiscBand = coderFilter(x, fs, [10 1000], [2 1], {'high', 'low'});
+yDiscBand = coderFilter_mex(x, fs, [10 1000], [2 1], {'high', 'low'});
+profile off
+profsave
 
 % Increasing order low pass filter
 nCascades = 4;
