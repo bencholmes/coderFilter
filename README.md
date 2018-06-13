@@ -3,6 +3,10 @@
 # coderFilter
 A MATLAB Coder compatible filter function, capable of 2nd order high, low, and bandpass filters and their combinations.
 
+## License
+
+[Creative Commons 0](https://creativecommons.org/publicdomain/zero/1.0/) i.e. do what you want with it!
+
 ## Motivation
 
 I often use MATLAB coder to speed up simulations. A generic filtering function can be useful in these simulations, but MATLAB's filter design functions (specifically `butter()`) do not support code generation. For this reason I built my own quick-and-easy 2nd order, cascadable filter.
