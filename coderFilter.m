@@ -4,7 +4,9 @@ function y = coderFilter(u, fs, cutoff, Q,  type)
 
 % Author:   Ben Holmes
 % Date:     2018/05/28
-% License:  BSD
+% Latest:   2018/06/13
+% Version:  1.1
+% License:  CC0
 
 % Input
 % where N is the number of cascaded sections...
