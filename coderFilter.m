@@ -20,10 +20,10 @@ function y = coderFilter(u, fs, cutoff, Q,  type)
 %   indicating 'high', 'band', or 'low' pass filters.
 
 %% Input checking
-% If only a string is provided for the type wrap it into a cell array.
-if ischar(type)
-    type = {type};
-end
+% % If only a string is provided for the type wrap it into a cell array.
+% if ischar(type)
+%     type = {type};
+% end
 
 if length(type) ~= length(cutoff) || length(type) ~= length(Q)
     error('Type, cutoff, and Q must all be the same length');
